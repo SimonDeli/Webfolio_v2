@@ -1,0 +1,8 @@
+#_mousefollow {
+  position:absolute;
+  z-index:999999;
+  background:white;
+  mix-blend-mode: difference;
+  border-radius:50%;
+  pointer-events: none;
+}

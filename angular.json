@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "webfolio"
+    }
+  },
+  "defaultProject": "webfolio",
+  "cli": {
+    "analytics": false
+  }
 }

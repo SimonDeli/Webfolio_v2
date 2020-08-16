@@ -1,0 +1,34 @@
+@import "src/common/_variables.scss";
+
+.container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  text-transform:uppercase;
+  .container-title {
+
+    h1 {
+      font-size:72px;
+      font-weight:100;
+      color:white;
+    }
+    h2 {
+      font-size:36px;
+      background: -webkit-linear-gradient(100deg, $violet, $red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .button-scroll {
+    position:absolute;
+    bottom:20px;
+    font-size:36px;
+    color:white;
+    opacity:.7;
+    cursor:pointer;
+    &:hover {
+      opacity:1;
+    }
+  }
+}
