@@ -12,7 +12,7 @@ import { PosterComponent } from './main/artworks/poster/poster.component';
 import { ModelisationComponent } from './main/artworks/modelisation/modelisation.component';
 import { MotionDesignComponent } from './main/artworks/motion-design/motion-design.component';
 import { OtherComponent } from './main/artworks/other/other.component';
-import { MouseFollowModule } from './utilities/mouse-follow/mouse-follow.module';
+import { CircleMouseFollowModule } from 'circle-mouse-follow';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { MouseFollowModule } from './utilities/mouse-follow/mouse-follow.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MouseFollowModule
+    CircleMouseFollowModule
   ],
   bootstrap: [AppComponent]
 })
