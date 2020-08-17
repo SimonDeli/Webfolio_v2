@@ -10,12 +10,14 @@ export class MouseFollowComponent implements OnInit {
   static comp:MouseFollowComponent;
 
   @Input("size") baseSizeElem:number = 50;
-  @Input("hover_size") hoverSizeElem:number = 20;
   @Input("delay") delay:number = 0;
 
   sizeElem:number = this.baseSizeElem;
   leftElem:number = 0;
   topElem:number = 0;
+
+  isHovSmtg:boolean = false;
+  outOfBounds:boolean = false;
 
 
   constructor() {
@@ -30,7 +32,7 @@ export class MouseFollowComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    this.sizeElem = 0;
   }
 
   onMouseMove(e) {
@@ -40,23 +42,22 @@ export class MouseFollowComponent implements OnInit {
   private followMouse(event:any){
     const x = event.clientX;
     const y = event.clientY;
-    const show =  x <= document.body.clientWidth - this.baseSizeElem / 2  &&
-                  y <= document.body.clientHeight - this.baseSizeElem / 2 &&
-                  x > this.baseSizeElem / 2 &&
-                  y > this.baseSizeElem / 2;
-
-
-
-
+    const limitOffset = 15;
+    this.outOfBounds =  !(x <= (document.body.clientWidth - this.baseSizeElem / 2) - limitOffset  &&
+                          y <= (document.body.clientHeight - this.baseSizeElem / 2) - limitOffset &&
+                          x > this.baseSizeElem / 2 + limitOffset &&
+                          y > this.baseSizeElem / 2 + limitOffset);
     window.setTimeout(() => {
-      console.log(this.baseSizeElem);
-      this.sizeElem = show ? this.baseSizeElem : 0;
+      this.sizeElem = this.baseSizeElem;
       this.leftElem = x - this.sizeElem/2;
       this.topElem = y - this.sizeElem/2;
     }, this.delay);
   }
-
-  public changeSize(size:number = 10){
-    this.baseSizeElem = size;
+  // Trigger by the directive "mf-hover"
+  public setIsHovSmth(value:boolean){
+    this.isHovSmtg = value;
+  }
+  public isOutOfBounds(){
+    return this.outOfBounds;
   }
 }

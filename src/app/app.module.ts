@@ -12,8 +12,7 @@ import { PosterComponent } from './main/artworks/poster/poster.component';
 import { ModelisationComponent } from './main/artworks/modelisation/modelisation.component';
 import { MotionDesignComponent } from './main/artworks/motion-design/motion-design.component';
 import { OtherComponent } from './main/artworks/other/other.component';
-import { MouseFollowComponent } from './utilities/mouse-follow/mouse-follow.component';
-import { MfHoverDirective } from './utilities/mouse-follow/mf-hover.directive';
+import { MouseFollowModule } from './utilities/mouse-follow/mouse-follow.module';
 
 @NgModule({
   declarations: [
@@ -26,16 +25,12 @@ import { MfHoverDirective } from './utilities/mouse-follow/mf-hover.directive';
     PosterComponent,
     ModelisationComponent,
     MotionDesignComponent,
-    OtherComponent,
-    MouseFollowComponent,
-    MfHoverDirective
+    OtherComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    MouseFollowComponent
+    AppRoutingModule,
+    MouseFollowModule
   ],
   bootstrap: [AppComponent]
 })

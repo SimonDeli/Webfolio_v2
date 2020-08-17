@@ -3,5 +3,8 @@
   'width.px':sizeElem,
   'top.px':topElem,
   'left.px':leftElem
-}">
+}" [ngClass]="{
+  'isHovSmtg' : isHovSmtg,
+  'isOutSmtg' : !isHovSmtg,
+  'outOfBounds' : isOutOfBounds() }">
 </div>
