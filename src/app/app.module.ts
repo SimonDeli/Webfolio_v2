@@ -13,6 +13,7 @@ import { ModelisationComponent } from './main/artworks/modelisation/modelisation
 import { MotionDesignComponent } from './main/artworks/motion-design/motion-design.component';
 import { OtherComponent } from './main/artworks/other/other.component';
 import { CircleMouseFollowModule } from 'circle-mouse-follow';
+import { ArtworksComponent } from './main/artworks/artworks.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CircleMouseFollowModule } from 'circle-mouse-follow';
     PosterComponent,
     ModelisationComponent,
     MotionDesignComponent,
-    OtherComponent
+    OtherComponent,
+    ArtworksComponent
   ],
   imports: [
     BrowserModule,
