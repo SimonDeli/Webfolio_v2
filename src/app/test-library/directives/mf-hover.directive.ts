@@ -8,7 +8,7 @@ export class MfHoverDirective {
 
   @Output("onClick") onClickEmit:EventEmitter<any> = new EventEmitter();
   @Input("backOnClick") boc:boolean = true;
-  islink:boolean;
+  islink:boolean = false;
 
   constructor(private mfc:CircleMouseFollowComponent,
               private el: ElementRef) {}
