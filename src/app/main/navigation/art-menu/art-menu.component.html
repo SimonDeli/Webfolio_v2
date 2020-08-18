@@ -1,1 +1,12 @@
-<p>art-menu works!</p>
+<div id="art-menu">
+  <div class="menu">
+    <ng-container *ngFor="let m of list_menu">
+      <a [routerLink]="'./' + m.path" class="item-menu" [ngStyle]="{
+        'background-image':'url('+ url_image + m.photo + ')'
+      }" mfHover [backOnClick]="false">
+        <div>{{ m.name }}</div>
+      </a>
+    </ng-container>
+  </div>
+  <div class="border"></div>
+</div>

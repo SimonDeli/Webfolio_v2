@@ -1,0 +1,11 @@
+<div id="_mousefollow" (document:mousemove)="onMouseMove($event)" [ngStyle]="{
+  'height.px':sizeElem,
+  'width.px':sizeElem,
+  'transform':'translateY(' + topElem + 'px) translateX(' + leftElem + 'px)'
+    }">
+  <div id="_mousefollow_in" [ngClass]="{
+    'isHovSmtg' : isHovSmtg,
+    'isOutSmtg' : !isHovSmtg,
+    'outOfBounds' : isOutOfBounds() }">
+  </div>
+<div>
