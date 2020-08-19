@@ -8,9 +8,10 @@ import { PosterComponent } from './main/artworks/poster/poster.component';
 import { ModelisationComponent } from './main/artworks/modelisation/modelisation.component';
 import { MotionDesignComponent } from './main/artworks/motion-design/motion-design.component';
 import { OtherComponent } from './main/artworks/other/other.component';
+import { AnimationsTestComponent } from './main/animations-test/animations-test.component';
 
 const routes: Routes = [
-  { path: '', component:HomeComponent },
+  { path: '', component:HomeComponent,  data: { animation : "Home"} },
   {
     path: 'artworks',
     component:ArtworksComponent,
@@ -23,6 +24,7 @@ const routes: Routes = [
       { path: 'autre', component: OtherComponent },
     ]
   },
+  { path: 'anim-test', component:AnimationsTestComponent }
 
 ];
 

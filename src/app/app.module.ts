@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,7 @@ import { OtherComponent } from './main/artworks/other/other.component';
 // import { CircleMouseFollowModule } from 'circle-mouse-follow';
 import { CircleMouseFollowModule } from './test-library/circle-mouse-follow.module';
 import { ArtworksComponent } from './main/artworks/artworks.component';
+import { AnimationsTestComponent } from './main/animations-test/animations-test.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +30,12 @@ import { ArtworksComponent } from './main/artworks/artworks.component';
     ModelisationComponent,
     MotionDesignComponent,
     OtherComponent,
-    ArtworksComponent
+    ArtworksComponent,
+    AnimationsTestComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     CircleMouseFollowModule
   ],

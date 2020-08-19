@@ -1,0 +1,8 @@
+<div *ngIf="!isDisapear" [@openClose]="isInProgress ? 'progress' : isOpen ? 'open' : 'closed'">
+  <p>Yo yo yo c moi le truc qui change de couleur</p>
+</div>
+<div class="buttons">
+<button (click)="toggle()">Toggle</button>
+<button (click)="toggleInProgress()">Progress</button>
+<button (click)="disapear()">Diseapear</button>
+</div>

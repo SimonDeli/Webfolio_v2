@@ -1,0 +1,9 @@
+.buttons {
+  position:absolute;
+  bottom:20px;
+  padding:20px;
+  > button {
+    font-size:2em;
+    text-transform: uppercase;
+  }
+}
