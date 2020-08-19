@@ -64,8 +64,8 @@ export class CircleMouseFollowComponent implements OnInit {
     }, this.delay);
   }
   // Trigger by the directive "mf-hover"
-  public setIsHovSmth(value:boolean){
-    if(!this.outOfBounds)
+  public setIsHovSmth(value:boolean, force:boolean = false){
+    if(!this.outOfBounds || force)
       this.isHovSmtg = value;
   }
   public isOutOfBounds(){
