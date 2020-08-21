@@ -1,0 +1,10 @@
+<div id="container_grid">
+  <div *ngFor="let e of artworks" class="container_img" [ngStyle]="{
+    'grid-column-start':e.data_grid.column_start,
+    'grid-column-end':e.data_grid.column_end,
+    'grid-row-start':e.data_grid.row_start,
+    'grid-row-end':e.data_grid.row_end
+  }" mfHover>
+    <img [src]="e.src" class="img" />
+  </div>
+</div>

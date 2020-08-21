@@ -17,6 +17,7 @@ import { OtherComponent } from './main/artworks/other/other.component';
 import { CircleMouseFollowModule } from './test-library/circle-mouse-follow.module';
 import { ArtworksComponent } from './main/artworks/artworks.component';
 import { AnimationsTestComponent } from './main/animations-test/animations-test.component';
+import { GridComponent } from './utils/grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AnimationsTestComponent } from './main/animations-test/animations-test.
     MotionDesignComponent,
     OtherComponent,
     ArtworksComponent,
-    AnimationsTestComponent
+    AnimationsTestComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,
