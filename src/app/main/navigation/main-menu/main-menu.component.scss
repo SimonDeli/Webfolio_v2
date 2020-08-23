@@ -1,0 +1,35 @@
+$icons-size:50px;
+$menu-height: 300px;
+$zIndex-menu: 99999;
+$color-bar-menu: #505050;
+#main_menu {
+  position:absolute;
+  background:white;
+  box-shadow:0 4px 10px rgba(0, 0, 0, .1);
+  top:0;
+  left:0;
+  right:0;
+  height:$menu-height;
+  z-index:$zIndex-menu;
+}
+#layer {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background:rgba(0, 0, 0, .8);
+  z-index:$zIndex-menu - 1;
+}
+.icons {
+  position:absolute;
+  z-index:$zIndex-menu + 1;
+  top:10px;
+  right:10px;
+  height:$icons-size;
+  width:$icons-size;
+  cursor:pointer;
+  > img {
+    height:100%;
+  }
+}
