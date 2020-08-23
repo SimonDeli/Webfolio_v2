@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ArtworkGridData } from '../interfaces/ArtworkGridData';
+import { ImageData } from '../interfaces/ImageData';
 
 @Component({
   selector: 'app-grid',
@@ -14,7 +15,7 @@ export class GridComponent implements OnInit {
 
   private grid:Array<Array<number>> = new Array<Array<number>>(this.gridHeight);
   private isHover: boolean = false;
-  main_image:string = null;
+  main_image:ImageData = null;
 
   constructor() { }
 
@@ -84,10 +85,20 @@ export class GridComponent implements OnInit {
   onOutElement(){
     this.isHover = false;
   }
-  onClickElement(src:string){
-    this.main_image = src;
+  onClickElement(event, element){
+    this.main_image = {
+      src:element.src,
+      top:this.getBoundingRect(event.target).top,
+      left:this.getBoundingRect(event.target).left,
+      default_top:0,
+      default_left:0
+    };
   }
   onClickLayer(){
     this.main_image = null;
+  }
+
+  getBoundingRect(element){
+    return element.getBoundingClientRect();
   }
 }
