@@ -1,10 +1,13 @@
-#container_grid{
+@import "src/common/_variables.scss";
+
+#container_grid {
   display:grid;
   grid-auto-columns: 10%;
   grid-auto-rows: 10%;
   grid-template-rows: minmax(10%, 0px);
   overflow:auto;
   height:100%;
+  position:relative;
 }
 .img, .container_img {
   width:100%;
@@ -15,21 +18,34 @@
   display:flex;
   position:relative;
   cursor:pointer;
-}
-.container_img:after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:black;
-  opacity:.8;
-  transition:all .1s;
-}
-.container_img:hover:after {
-  opacity:0;
+  border: 1px solid transparent;
+  filter:grayscale(100%);
+  &:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:black;
+    opacity:.5;
+    transition:all .3s;
+    pointer-events: none;
+  }
+  &:hover{
+    filter:none;
+    &:after {
+      transition:all .1s;
+      opacity:0 !important;
+    }
+  }
+  &.hoverElm {
+    border: 1px solid rgb(180, 180, 180);
+    &:after {
+      opacity:.9;
+    }
+  }
 }
 .img {
   align-self: center;

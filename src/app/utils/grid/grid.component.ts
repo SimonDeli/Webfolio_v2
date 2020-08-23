@@ -13,7 +13,8 @@ export class GridComponent implements OnInit {
   @Input("elements") artworks:Array<ArtworkGridData> = new Array<ArtworkGridData>();
 
   private grid:Array<Array<number>> = new Array<Array<number>>(this.gridHeight);
-
+  private isHover: boolean = false;
+  main_image:string = null;
 
   constructor() { }
 
@@ -26,7 +27,8 @@ export class GridComponent implements OnInit {
 
     this.artworks.forEach((image, i) => {
       let width = image.width;
-      let height = this.getRandomIntInclusive(width - 1, width - 0); // get a random height for the image compare to his width
+      // let height = this.getRandomIntInclusive(width - 1, width - 0); // get a random height for the image compare to his width
+      let height = width // get a random height for the image compare to his width
       height = height <= 0 ? 1 : height;
       for (let r = 0, canBreak = false; r < this.grid.length && !canBreak; r++) {
         for (let c = 0; c < this.grid[r].length && !canBreak; c++) {
@@ -74,5 +76,18 @@ export class GridComponent implements OnInit {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  onOverElement(id:number){
+    this.isHover = true;
+  }
+  onOutElement(){
+    this.isHover = false;
+  }
+  onClickElement(src:string){
+    this.main_image = src;
+  }
+  onClickLayer(){
+    this.main_image = null;
   }
 }

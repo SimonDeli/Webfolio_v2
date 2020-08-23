@@ -1,0 +1,124 @@
+{
+  "categorie": [
+    {
+      "name":"dessin",
+      "photo":"dessin.png",
+      "path":"dessin",
+      "artworks": [
+
+      ]
+    },
+    {
+      "name":"logo",
+      "photo":"logo.png",
+      "path":"logo",
+      "artworks": [
+          {
+            "id":1,
+            "name": "mmi.jpg",
+            "width": 4
+          },
+          {
+            "id":2,
+            "name": "ampoule.jpg",
+            "width": 2
+          },
+          {
+            "id":3,
+            "name": "avosbars.png",
+            "width": 4
+          },
+          {
+            "id":4,
+            "name": "avosbars2.png",
+            "width": 4
+          },
+          {
+            "id":5,
+            "name": "boisson.jpg",
+            "width": 2
+          },
+          {
+            "id":6,
+            "name": "boulange.jpg",
+            "width": 2
+          },
+          {
+            "id":7,
+            "name": "coeur_artichaut.jpg",
+            "width": 4
+          },
+          {
+            "id":8,
+            "name": "compagnon.jpg",
+            "width": 2
+          },
+          {
+            "id":9,
+            "name": "livre.jpg",
+            "width": 2
+          },
+          {
+            "id":10,
+            "name": "saltircus.png",
+            "width": 4
+          },
+          {
+            "id":11,
+            "name": "sel.jpg",
+            "width": 2
+          },
+          {
+            "id":12,
+            "name": "sucre.jpg",
+            "width": 2
+          },
+          {
+            "id":13,
+            "name": "tatouage.jpg",
+            "width": 2
+          }
+      ]
+    },
+    {
+      "name":"affiche",
+      "photo":"affiche.png",
+      "path":"affiche",
+      "artworks": [
+
+      ]
+    },
+    {
+      "name":"3d",
+      "photo":"3d.png",
+      "path":"modelisation",
+      "artworks": [
+
+      ]
+    },
+    {
+      "name":"motion design",
+      "photo":"motion_design.png",
+      "path":"motion-design",
+      "artworks": [
+
+      ]
+    },
+    {
+      "name":"autre",
+      "photo":"autre.png",
+      "path":"autre",
+      "artworks": [
+
+      ]
+    },
+    {
+      "name":"autre",
+      "photo":"autre.png",
+      "path":"autre",
+      "artworks": [
+
+      ]
+    }
+  ]
+}

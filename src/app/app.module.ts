@@ -18,6 +18,9 @@ import { CircleMouseFollowModule } from 'circle-mouse-follow';
 import { ArtworksComponent } from './main/artworks/artworks.component';
 import { AnimationsTestComponent } from './main/animations-test/animations-test.component';
 import { GridComponent } from './utils/grid/grid.component';
+import { SelectImageComponent } from './utils/select-image/select-image.component';
+
+import { CategorieService } from 'src/app/utils/service/categorie.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { GridComponent } from './utils/grid/grid.component';
     OtherComponent,
     ArtworksComponent,
     AnimationsTestComponent,
-    GridComponent
+    GridComponent,
+    SelectImageComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +45,9 @@ import { GridComponent } from './utils/grid/grid.component';
     AppRoutingModule,
     CircleMouseFollowModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [
+    CategorieService
+  ]
 })
 export class AppModule { }

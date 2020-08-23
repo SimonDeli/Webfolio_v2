@@ -4,7 +4,13 @@
     'grid-column-end':e.data_grid.column_end,
     'grid-row-start':e.data_grid.row_start,
     'grid-row-end':e.data_grid.row_end
-  }" mfHover>
-    <img [src]="e.src" class="img" />
+  }" [ngClass]="{'hoverElm' : isHover }" mfHover>
+    <img
+      [src]="e.src"
+      class="img"
+      (mouseover)="onOverElement(e.id)"
+      (mouseout)="onOutElement()"
+      (click)="onClickElement(e.src)"/>
   </div>
 </div>
+<app-select-image *ngIf="main_image != null" [image]="main_image" (clickLayer)="onClickLayer()"></app-select-image>
