@@ -1,11 +1,11 @@
 <div id="main_menu" *ngIf="menuShow" @slide >
-
-</div>
-<div @opacity id="layer" *ngIf="menuShow" (click)="toggle()">
+  <a [routerLink]="'/'" (click)="toggle()" mhHover>Home</a>
 </div>
 <div @opacity class="icons" id="open" *ngIf="!menuShow" (click)="toggle()" mfHover>
   <img src="assets/icons/hamburger.svg"/>
 </div>
 <div @opacity class="icons" id="close" *ngIf="menuShow" (click)="toggle()" mfHover>
   <img src="assets/icons/cross.svg"/>
+</div>
+<div @opacity id="layer" *ngIf="menuShow" (click)="toggle()">
 </div>

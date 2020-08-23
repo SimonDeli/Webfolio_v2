@@ -14,8 +14,7 @@ export class MfHoverDirective {
 
   routerSub: Subscription = null;
 
-  constructor(private mfc:CircleMouseFollowComponent,
-              private el: ElementRef,
+  constructor(private el: ElementRef,
               private router:Router) {
     this.routerSub = this.router.events.subscribe(
       (response) => {

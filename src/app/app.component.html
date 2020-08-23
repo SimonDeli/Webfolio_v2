@@ -1,5 +1,5 @@
-<div [@routeAnimations]="prepareRoute(outlet)" style="width:100%; height:100%;">
-  <app-main-menu></app-main-menu>
+<app-main-menu></app-main-menu>
+<div [@routeAnimations]="prepareRoute(outlet)" id="main_container">
   <router-outlet #outlet="outlet"></router-outlet>
 </div>
 <circle-mouse-follow [size]=50></circle-mouse-follow>
