@@ -3,13 +3,9 @@
 </div>
 <div @opacity id="layer" *ngIf="menuShow" (click)="toggle()">
 </div>
-<div class="bar-menu">
-  <a mfHover routerLink="/">Home</a>
-  <div @opacity class="icons" id="open" *ngIf="!menuShow" (click)="toggle()" mfHover>
-    <img src="assets/icons/hamburger.svg"/>
-  </div>
-  <div @opacity class="icons" id="close" *ngIf="menuShow" (click)="toggle()" mfHover>
-    <img src="assets/icons/cross.svg"/>
-  </div>
-  <div class="hover-button"></div>
+<div @opacity class="icons" id="open" *ngIf="!menuShow" (click)="toggle()" mfHover>
+  <img src="assets/icons/hamburger.svg"/>
+</div>
+<div @opacity class="icons" id="close" *ngIf="menuShow" (click)="toggle()" mfHover>
+  <img src="assets/icons/cross.svg"/>
 </div>

@@ -21,54 +21,15 @@ $color-bar-menu: #505050;
   background:rgba(0, 0, 0, .8);
   z-index:$zIndex-menu - 1;
 }
-.bar-menu {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background:$color-bar-menu;
+.icons {
   position:absolute;
-  top:0;
-  width:100%;
-  z-index:$zIndex-menu - 1;
-  height:$icons-size + 20px;
-  transform:translateY(-110%);
-  transition:transform .2s;
-  box-shadow:0 4px 10px rgba(0, 0, 0, .1);
-  .icons {
-    position:absolute;
-    z-index:2;
-    top:10px;
-    right:10px;
-    height:$icons-size;
-    width:$icons-size;
-    cursor:pointer;
-    > img {
-      height:100%;
-    }
-  }
-  .hover-button {
-    z-index:1;
-    position:absolute;
-    bottom:0;
-    transform:translateY(60%);
-    right:10px;
-    height:$icons-size;
-    width:$icons-size;
-    border-radius:50%;
-    background:$color-bar-menu;
-    transition:transform .2s;
-  }
-  > a {
-    color:white;
-    text-decoration: none;
-    font-size:1.5em;
-    text-transform: uppercase;
-    font-weight:200;
-  }
-  &:hover {
-    transform:translateY(0%);
-    .hover-button {
-      transform:translateY(0%);
-    }
+  z-index:$zIndex-menu + 1;
+  top:10px;
+  right:10px;
+  height:$icons-size;
+  width:$icons-size;
+  cursor:pointer;
+  > img {
+    height:100%;
   }
 }
