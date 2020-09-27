@@ -19,7 +19,7 @@ $transition-duration: .2s;
     &::-webkit-scrollbar { /* Chrome, Safari and Opera */
       display:none;
     }
-    
+
     > .item-menu {
       flex:1;
       min-height:calc(100vh/6);
@@ -63,7 +63,7 @@ $transition-duration: .2s;
     }
   }
   > .border {
-    background:linear-gradient(171deg, $violet 0%, $red 100.54%);;
+    background:linear-gradient(171deg, $violet 0%, $red 100.54%);
     width:20px;
     height:100%;
   }

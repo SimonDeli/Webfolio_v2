@@ -5,7 +5,62 @@
       "photo":"dessin.png",
       "path":"dessin",
       "artworks": [
-
+        {
+          "id":1,
+          "name": "ailes.jpg"
+        },
+        {
+          "id":2,
+          "name": "alexis.jpg"
+        },
+        {
+          "id":3,
+          "name": "camille.jpg"
+        },
+        {
+          "id":4,
+          "name": "claire.jpg"
+        },
+        {
+          "id":5,
+          "name": "etrange.jpg"
+        },
+        {
+          "id":6,
+          "name": "hayley.jpg"
+        },
+        {
+          "id":7,
+          "name": "hibou.jpg"
+        },
+        {
+          "id":8,
+          "name": "juliette.jpg"
+        },
+        {
+          "id":9,
+          "name": "oeil.jpg"
+        },
+        {
+          "id":10,
+          "name": "pablo.jpg"
+        },
+        {
+          "id":11,
+          "name": "perso.jpg"
+        },
+        {
+          "id":12,
+          "name": "raiponce.jpg"
+        },
+        {
+          "id":13,
+          "name": "simon.jpg"
+        },
+        {
+          "id":14,
+          "name": "taylor.jpg"
+        }
       ]
     },
     {

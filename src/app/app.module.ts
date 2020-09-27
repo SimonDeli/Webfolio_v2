@@ -21,6 +21,7 @@ import { GridComponent } from './utils/grid/grid.component';
 import { SelectImageComponent } from './utils/select-image/select-image.component';
 
 import { CategorieService } from 'src/app/utils/service/categorie.service';
+import { GalleryComponent } from './utils/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { CategorieService } from 'src/app/utils/service/categorie.service';
     ArtworksComponent,
     AnimationsTestComponent,
     GridComponent,
-    SelectImageComponent
+    SelectImageComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

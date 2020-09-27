@@ -15,7 +15,6 @@ export class LogoComponent implements OnInit {
 
   ngOnInit(): void {
     const art = this.categorieService.getArtworksByCategorie("logo");
-    console.log(art);
     for (let i = 0; i < art.length; i++) {
       const element = art[i];
       this.logo.push({
