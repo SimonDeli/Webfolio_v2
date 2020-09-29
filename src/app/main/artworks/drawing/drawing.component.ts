@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ArtworkGalleryData } from 'src/app/utils/interfaces/ArtworkGalleryData';
+import { ArtworkGridData } from 'src/app/utils/interfaces/ArtworkGridData';
 import { CategorieService } from 'src/app/utils/service/categorie.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { CategorieService } from 'src/app/utils/service/categorie.service';
 export class DrawingComponent implements OnInit {
 
   private base_src:string = "assets/images/dessins/";
-  dessins:Array<ArtworkGalleryData> = new Array<ArtworkGalleryData>();
+  dessins:Array<ArtworkGridData> = new Array<ArtworkGridData>();
 
   constructor(private categorieService: CategorieService) { }
 

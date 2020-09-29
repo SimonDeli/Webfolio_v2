@@ -18,7 +18,7 @@ const routes: Routes = [
     children: [
       { path: 'dessin', component: DrawingComponent },
       { path: 'logo', component: LogoComponent },
-      { path: 'affiche', component: PosterComponent },
+      { path: 'poster', component: PosterComponent },
       { path: 'modelisation', component: ModelisationComponent },
       { path: 'motion-design', component: MotionDesignComponent },
       { path: 'autre', component: OtherComponent },

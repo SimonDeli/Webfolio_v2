@@ -1,4 +1,8 @@
-<div id="container_grid">
+<div
+  id="container_grid"
+  [ngStyle]="{
+    'grid-auto-columns':gridAutoColumns
+  }">
   <div *ngFor="let e of artworks" class="container_img" [ngStyle]="{
     'grid-column-start':e.data_grid.column_start,
     'grid-column-end':e.data_grid.column_end,

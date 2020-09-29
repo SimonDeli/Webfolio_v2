@@ -1,5 +1,5 @@
 <div id="container_gallery">
-  <div class="nav">
+  <div class="nav" *ngIf="arrowVisible">
     <ng-container *ngFor="let point of artworks; let i = index">
       <div
         [ngClass]="{ 'point':true, 'actual': point.id == artworks_actual.id }"
@@ -9,14 +9,18 @@
     </ng-container>
   </div>
   <div class="wrapper_container_image">
-    <div class="arrow right" (click)="onClickArrow(true)" mfHover></div>
-    <div class="arrow left" (click)="onClickArrow(false)" mfHover></div>
+    <ng-container *ngIf="arrowVisible">
+      <div class="arrow right" (click)="onClickArrow(true)" mfHover></div>
+      <div class="arrow left" (click)="onClickArrow(false)" mfHover></div>
+    </ng-container>
     <div
+      [style.width]="container_img_width"
       *ngFor="let artwork of artworks_visible"
       class="container_image"
       [ngClass]="{ 'hoverElm': isHover, 'actual':artwork.id == artworks_actual.id }"
       (mouseover)="onOverElement(artwork.id)"
-      (mouseout)="onOutElement()">
+      (mouseout)="onOutElement()"
+      >
       <img
         [src]="artwork.src"
         (click)="onClickElement(artwork.src)"

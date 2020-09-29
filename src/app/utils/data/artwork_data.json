@@ -136,11 +136,22 @@
       ]
     },
     {
-      "name":"affiche",
+      "name":"poster",
       "photo":"affiche.png",
-      "path":"affiche",
+      "path":"poster",
       "artworks": [
-
+        {
+          "id":1,
+          "name": "jazz.jpg"
+        },
+        {
+          "id":2,
+          "name": "rock.jpg"
+        },
+        {
+          "id":3,
+          "name": "99_franc.jpg"
+        }
       ]
     },
     {

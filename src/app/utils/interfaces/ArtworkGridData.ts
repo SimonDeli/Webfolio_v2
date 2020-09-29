@@ -1,7 +1,7 @@
 export interface ArtworkGridData {
   id:number,
   src:string,
-  width:number,
+  width?:number,
   data_grid?:{
     column_start:number,
     column_end:number,

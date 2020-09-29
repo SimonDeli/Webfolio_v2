@@ -45,21 +45,21 @@ $nav-color:yellow;
     }
   }
   .wrapper_container_image {
+    max-height:80%;
     width:100%;
-    display:flex;
-    align-items: center;
+    // display:flex;
     margin-top:50px;
     position:relative;
+    font-size:0px;
     .container_image {
-      width:33.3333%;
-      flex:33.3333%;
-      margin:0 10px;
+      height:100%;
+      display:inline-block;
       position:relative;
       transition: all .2s;
       border:1px solid transparent;
-      transform:scale(.8);
+      // transform:scale(.8);
       &.actual {
-        transform:scale(1);
+        // transform:scale(1);
       }
       &:after {
         content:"";
