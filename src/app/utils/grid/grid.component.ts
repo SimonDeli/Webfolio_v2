@@ -15,7 +15,6 @@ export class GridComponent implements OnInit {
   gridAutoColumns:string;
 
   private grid:Array<Array<number>> = new Array<Array<number>>(this.gridHeight);
-  private isHover: boolean = false;
   main_image:string = null;
 
   constructor() { }
@@ -81,12 +80,6 @@ export class GridComponent implements OnInit {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  onOverElement(id:number){
-    this.isHover = true;
-  }
-  onOutElement(){
-    this.isHover = false;
-  }
   onClickElement(src:string){
     this.main_image = src;
   }

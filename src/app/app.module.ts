@@ -22,6 +22,7 @@ import { SelectImageComponent } from './utils/select-image/select-image.componen
 
 import { CategorieService } from 'src/app/utils/service/categorie.service';
 import { GalleryComponent } from './utils/gallery/gallery.component';
+import { ShadowHoverDirective } from './utils/directives/shadow-over/shadow-hover.directive';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { GalleryComponent } from './utils/gallery/gallery.component';
     AnimationsTestComponent,
     GridComponent,
     SelectImageComponent,
-    GalleryComponent
+    GalleryComponent,
+    ShadowHoverDirective
   ],
   imports: [
     BrowserModule,

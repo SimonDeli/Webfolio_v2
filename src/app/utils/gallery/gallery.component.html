@@ -17,14 +17,12 @@
       [style.width]="container_img_width"
       *ngFor="let artwork of artworks_visible"
       class="container_image"
-      [ngClass]="{ 'hoverElm': isHover, 'actual':artwork.id == artworks_actual.id }"
-      (mouseover)="onOverElement(artwork.id)"
-      (mouseout)="onOutElement()"
-      >
+      mfHover
+      appShadowHover
+    >
       <img
         [src]="artwork.src"
         (click)="onClickElement(artwork.src)"
-        mfHover
         />
     </div>
   </div>

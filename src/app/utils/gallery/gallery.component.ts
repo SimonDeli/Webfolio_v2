@@ -18,7 +18,6 @@ export class GalleryComponent implements OnInit {
   artworks_actual:ArtworkGalleryData;
   index_actual:number;
   main_image:string = null;
-  isHover:boolean = false;
 
   arrowVisible:boolean = true;
 
@@ -67,11 +66,5 @@ export class GalleryComponent implements OnInit {
   }
   onClickLayer(){
     this.main_image = null;
-  }
-  onOverElement(id:number){
-    this.isHover = true;
-  }
-  onOutElement(){
-    this.isHover = false;
   }
 }

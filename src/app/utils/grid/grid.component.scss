@@ -16,36 +16,7 @@
 .container_img {
   overflow:hidden;
   display:flex;
-  position:relative;
   cursor:pointer;
-  border: 1px solid transparent;
-  filter:grayscale(100%);
-  &:after {
-    content:"";
-    display:block;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background:black;
-    opacity:.5;
-    transition:all .3s;
-    pointer-events: none;
-  }
-  &:hover{
-    filter:none;
-    &:after {
-      transition:all .1s;
-      opacity:0 !important;
-    }
-  }
-  &.hoverElm {
-    border: 1px solid rgb(180, 180, 180);
-    &:after {
-      opacity:.9;
-    }
-  }
 }
 .img {
   align-self: center;

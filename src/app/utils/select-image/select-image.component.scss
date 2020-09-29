@@ -1,4 +1,6 @@
-$z-index-layer:999999;
+@import "src/common/_variables.scss";
+
+$z-index-layer:100001;
 
 #layer-image {
   position:absolute;
@@ -8,6 +10,7 @@ $z-index-layer:999999;
   height:100%;
   background:rgba(0, 0, 0, .8);
   z-index:$z-index-layer;
+  cursor:pointer;
 }
 .content {
   box-shadow:0px 0px 10px rgba(0, 0, 0, .2);
@@ -20,10 +23,17 @@ $z-index-layer:999999;
   width:100%;
   z-index:$z-index-layer + 1;
   display:flex;
+  background:rgba(255, 255, 255, .1);
+  border:2px solid;
+  padding:30px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(171deg, $violet 0%, $red 100.54%);
+
   .infos {
     flex:1;
     font-size:1.5em;
     color:white;
+    margin-right:20px;
     .title {
       text-transform: uppercase;
       border-bottom:1px solid rgba(255, 255, 255, .5);

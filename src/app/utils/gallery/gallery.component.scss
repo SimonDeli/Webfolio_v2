@@ -47,9 +47,7 @@ $nav-color:yellow;
   .wrapper_container_image {
     max-height:80%;
     width:100%;
-    // display:flex;
     margin-top:50px;
-    position:relative;
     font-size:0px;
     .container_image {
       height:100%;
@@ -60,32 +58,6 @@ $nav-color:yellow;
       // transform:scale(.8);
       &.actual {
         // transform:scale(1);
-      }
-      &:after {
-        content:"";
-        display:block;
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        background:black;
-        opacity:.5;
-        transition:all .3s;
-        pointer-events: none;
-      }
-      &:hover{
-        filter:none;
-        &:after {
-          transition:all .1s;
-          opacity:0 !important;
-        }
-      }
-      &.hoverElm {
-        border: 1px solid rgb(180, 180, 180);
-        &:after {
-          opacity:.9;
-        }
       }
       img {
         object-fit: cover;
