@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-artworks',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtworksComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router:Router) { }
+
+  get r(){
+    return this._router;
+  }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -1,4 +1,6 @@
 <div id="artworks_page">
   <app-art-menu></app-art-menu>
+  <div *ngIf="r.url == '/artworks'" id="click_on_category">
+  </div>
   <router-outlet></router-outlet>
 </div>

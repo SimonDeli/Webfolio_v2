@@ -2,4 +2,11 @@
   display:flex;
   height:100%;
   overflow:hidden;
+  position:relative;
+  #click_on_category {
+    background-image:url('/assets/images/other/background_categorie_home.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:100%;
+  }
 }
